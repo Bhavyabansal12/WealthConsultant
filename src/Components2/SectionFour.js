@@ -7,7 +7,7 @@ function SectionFour() {
                 <div className="container-xl">
                     <div data-w-id="c2b20fba-a82f-44f9-1cd1-18eab57d55ce" className="banner-small-content">
                         <h2 className="banner-small-content-heading">
-                           Why should you <br />Join Us?
+                            Numbers that speak <br />for themselves
                         </h2>
                         <div className="banner-small-content-grid">
                             <div className="div-block-33">
@@ -16,7 +16,7 @@ function SectionFour() {
                                         <span className="counterup">423</span>%
                                     </h3>
                                     <p className="banner-small-content-grid-item-pr">
-                                        SEBI Registered RA Since 2019
+                                        Total ROI Since Start
                                     </p>
                                 </div>
                                 <div className="banner-small-content-grid-item center-block">
@@ -24,7 +24,7 @@ function SectionFour() {
                                         <span className="counterup">82.17</span>%
                                     </h3>
                                     <p className="banner-small-content-grid-item-pr">
-                                        Timely Updates
+                                        Previous Month ROI
                                     </p>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ function SectionFour() {
                                         <span className="counterup">75</span>%
                                     </h3>
                                     <p className="banner-small-content-grid-item-pr">
-                                       Support 24 x 7
+                                        Accuracy In Trade Calls
                                     </p>
                                 </div>
                                 <div className="banner-small-content-grid-item">
@@ -42,7 +42,7 @@ function SectionFour() {
                                         <span className="counterup">1.5</span>L+
                                     </h3>
                                     <p className="banner-small-content-grid-item-pr">
-                                        15+ Years Experience
+                                        Satisfied Clients Since 2019
                                     </p>
                                 </div>
                             </div>

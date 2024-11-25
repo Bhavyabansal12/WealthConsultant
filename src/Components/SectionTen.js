@@ -1,61 +1,101 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+const testimonials = [
+    {
+        testimonialName: 'Hema',
+        testimonialPlace: 'Paid Service in Stock Cash, Stock Future(Mysore)',
+        testimonialDesc: 'Very good service and I am benefited. The team provides reliable information and timely support whenever needed. Definitely value for money and excellent for beginners in trading, anyway. Thank you.'
+    },
+    {
+        testimonialName: 'SIBASIS',
+        testimonialPlace: 'Paid Service in Nifty Option, Stock Cash, Stock Option(BHUBANESWAR)',
+        testimonialDesc: 'Hi, I have a paid service client and mostly working on Nifty Options & Stock Options. The service /call provided in-time and works very well. Most of the calls are hit the target. I am happy and may take the annual plan.'
+    },
+    {
+        testimonialName: 'Ram',
+        testimonialPlace: 'Paid Service in (Visakhapatnam)',
+        testimonialDesc: 'Nice service. Always tries to minimization loss even if the trade goes wrong which is very much important. Proper analysis is also provided.'
+    },
+    {
+        testimonialName: 'Akshay Jain',
+        testimonialPlace: 'Paid Service in Nifty Option, Stock Cash, Stock Option(Udaipur)',
+        testimonialDesc: 'Very nice service excellent calls! Exactly Accurate proper sl and Target! Recommended!!!!'
+    },
+    {
+        testimonialName: 'Mitul Shah',
+        testimonialPlace: 'Paid Service in Stock Future, Stock Option(Gujarat)',
+        testimonialDesc: 'I recently joined only.your tips are really very good resurch. Perfect call and entry. Indtrady call is exellent. Your calls is simple awaysome. Exellent work....great sir....GOOD WORK????'
+    }
+]
 
 function SectionTen() {
-  return (
-    <div>
-        <section class="section_learns">
-        <div class="padding-global-2">
-          <div class="container-large-2">
-            <div class="learn_content-wrapper">
-              <div class="learn_heading-wrapper">
-                <div data-w-id="c2b20fba-a82f-44f9-1cd1-18eab57d5634" class="div-block-30">
-                  <h2 class="learn_heading width-279px">
-                    A History of Achievement
-                  </h2>
-                  <img src="https://cdn.prod.website-files.com/64ede0a591d8114fdaa0ae7f/64f7703d9b2b60a6b46a96d3_Vector.svg" loading="lazy" alt="" class="heading-shape" style={{opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}} />
-                </div>
-              </div>
-              <div class="learn_card-wrapper">
-                <div data-w-id="c2b20fba-a82f-44f9-1cd1-18eab57d5639" class="div-block-28"></div>
-                <div class="learning_card justify-right" style={{opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}}>
-                  <div id="w-node-c2b20fba-a82f-44f9-1cd1-18eab57d5652-216d5d0c" class="image-4">
-                    <img src="https://service.intelisys.app/img/What%20Do%20You%20Get%20images/awardImg.jpeg" loading="lazy" alt="" class="im-shadow" />
-                  </div>
-                  <div class="learning_card-content-wrapper">
-                    <div class="learning_card-content">
-                      <h3 class="learning_card-heading">
-                        Award Presented By Zee Business
-                      </h3>
-                      <div class="learning_card-para">
-                        Recognized as a leader in providing expert stock and
-                        commodity market advice.
-                      </div>
+    const testimonialSlide = {
+        loop: true,
+        animateOut: 'fadeOut',
+        margin: 10,
+        navSpeed: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        navText: [
+            "<i className='bx bx-chevron-left'></i>",
+            "<i className='bx bx-chevron-right'></i>",
+        ],
+        responsive: {
+            0: {
+                items: 3,
+            },
+            576: {
+                items: 3,
+            },
+            768: {
+                items: 4,
+            },
+            1200: {
+                items: 3,
+            },
+            margin: 5
+        }
+    };
+
+    return (
+        <div>
+            <section className="wop-section">
+                <div className="main-container">
+                    <div className="wop-wrapper-div">
+                        <div className="section-heading center">
+                            <h2 className="section-heading-text">
+                                Testimonials
+                            </h2>
+                            <img src="https://cdn.prod.website-files.com/64ede0a591d8114fdaa0ae7f/64f7703d9b2b60a6b46a96d3_Vector.svg" loading="lazy" alt="" className="heading-shape" />
+                        </div>
+                        <div className="testimonials-container">
+                            <OwlCarousel className="owl-theme owl-carousel" {...testimonialSlide}>
+                                {testimonials.map((testimonial) => (
+                                    <div className="testimonial-card" key={testimonial.testimonialName}>
+                                        <h3>{testimonial.testimonialName}</h3>
+                                        <p className="quote">{testimonial.testimonialDesc}</p>
+                                        <p className="role">{testimonial.testimonialPlace}</p>
+                                        <div className='testimonialQuote'>
+                                            <svg className="w-8 transition-[inherit] p-0" fill="rgb(243, 224, 247)" viewBox="0 0 259.43 367.5">
+                                                <path d="M.53,0H255.84c15,14-23.29,233.58.07,367.5C255.91,367.5-13.49,272.51.53,0Z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                ))}
+                            </OwlCarousel>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="learning_card justify-right" style={{opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}}>
-                  <div class="learning_card-content-wrapper">
-                    <div class="learning_card-content text-align-right">
-                      <h3 class="learning_card-heading">
-                        Award Presented By Business Connect
-                      </h3>
-                      <div class="learning_card-para">
-                        Pioneered a new standard in affordable and effective
-                        research advisory services.
-                      </div>
-                    </div>
-                  </div>
-                  <div id="w-node-c2b20fba-a82f-44f9-1cd1-18eab57d5665-216d5d0c" class="image-4 _2">
-                    <img src="https://service.intelisys.app/img/What%20Do%20You%20Get%20images/awardImg.jpeg" loading="lazy" alt="" class="im-shadow" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </section>
         </div>
-      </section>
-    </div>
-  )
+    );
 }
 
-export default SectionTen
+export default SectionTen;

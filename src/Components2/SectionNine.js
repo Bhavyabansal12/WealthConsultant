@@ -3,7 +3,7 @@ import React from 'react'
 function SectionNine() {
   return (
     <div>
-        <section class="section_subscribe_now" style={{backgroundColor: 'rgb(230,230,250)'}}>
+        <section class="section_subscribe_now" style={{backgroundColor: 'rgb(244, 244, 244)'}}>
         <div class="offer_container container">
           <h1 class="offer_heading">Start Your Profitable Journey Today!</h1>
           <del class="int-price">Total Value: ₹19,999/-</del>

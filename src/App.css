@@ -257,7 +257,7 @@ button,
   font-size: 40px;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
-  color: #0f157d;
+  color: #55107a;
   text-align: center;
 }
 
@@ -626,7 +626,7 @@ li {
   color: #000;
   text-align: center;
   background-color: #ecd996;
-  border-radius: 59px;
+  border-radius: 20px;
   align-self: center;
   width: 300px;
   margin-top: 30px;
@@ -1180,7 +1180,9 @@ li {
 ._35px.text-blue {
   color: #2160fc;
 }
-
+._35px.text-theme {
+  color: #2F4F4F;
+}
 .masterclass-for-grid {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -1236,10 +1238,70 @@ li {
   overflow: hidden;
 }
 
-.footer {
-  background-color: #000;
-  padding-top: 60px;
-  padding-bottom: 180px;
+#footer {
+  background: #222;
+  font-family: 'titilliumregular', sans-serif;
+  padding: 30px 15px 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-box {
+  color: #fff;
+  padding: 10px;
+  flex: 1 1 30%; /* Each box takes up 30% of the width (with space for margin) */
+  box-sizing: border-box;
+  border-bottom: 1px dashed #fff;
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-box h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-box p {
+  font-size: 13px;
+}
+
+.footer-back-box1,
+.footer-back-box2,
+.footer-back-box3 {
+  padding: 0 0 20px;
+}
+
+.footer-back-box2 a {
+  color: #fc0;
+  text-decoration: none;
+}
+.footer-back-box1 a {
+  display: list-item;
+  list-style: none;
+  color: #fc0;
+  text-decoration: none;
+}
+
+.footer-back-box2 a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-box {
+    flex: 1 1 100%; /* Stack sections vertically on small screens */
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding: 20px 10px;
+  }
 }
 
 
@@ -1364,6 +1426,7 @@ li {
   border-radius: 10px;
   align-items: flex-start;
   padding: 24px 16px;
+  text-align: center;
 }
 
 .div-block-4 {

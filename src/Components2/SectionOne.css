@@ -22,7 +22,7 @@
 }
 
 .bg-gradiant {
-    background: var(--gradient, radial-gradient(110.44% 76.41% at 101.66% -7.04%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%), #BA55D3);
+    background: var(--gradient, radial-gradient(110.44% 76.41% at 101.66% -7.04%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%), #2160fc);
 }
 
 
@@ -77,8 +77,8 @@
 
 /* SectionTwo */
 .section_learn {
-    background-color: #e3dfdf;
-    padding-top: 80px;
+    background-color: #ebf1ff;
+    padding-top: 750px;
     padding-bottom: 76px;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .money-grid-item-heading-m {
-    color: #212233;
+    color: #0f157d;
     font-size: 25px;
     margin-bottom: 10px;
     text-align: center;
@@ -231,7 +231,7 @@
 
 /* Section Four */
 .banner-small {
-    background-color: #f9ecfb;
+    background-color: #ebf1ff;
     padding-top: 30px;
     padding-bottom: 70px;
 }
@@ -258,7 +258,7 @@
 }
 
 .banner-small-content-grid-item-heading {
-    color: #55107a;
+    color: #2160fc;
     margin-top: 0;
     font-family: Plus Jakarta Sans, sans-serif;
     font-size: 24px;
@@ -285,145 +285,6 @@
     grid-auto-columns: 1fr;
     display: flex;
 }
-/* SectionFive  */
-  .pricing-container {
-    display: flex;
-    gap: 20px;
-    align-items: flex-end;
-  }
-  
-  /* Card Styles */
-  .pricing-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-    width: 320px;
-    border: 1px solid #d4edda;
-    cursor: pointer;
-  }
-  
-  .pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .featured {
-    transform: translateY(-30px);
-    border: 2px solid #28a745;
-    background: linear-gradient(135deg, #e8f5e9, #ffffff);
-  }
-  
-  .featured:hover {
-    transform: translateY(-40px);
-  }
-  
-  /* Selected Card */
-  .pricing-card.selected {
-    border-color: #218838;
-    transform: translateY(-15px) scale(1.05);
-  }
-  
-  /* Typography */
-  h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #28a745;
-  }
-  
-  .price {
-    font-size: 36px;
-    margin: 10px 0;
-    color: #155724;
-  }
-  
-  /* List Styles */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  ul li {
-    margin: 10px 0;
-    color: #555;
-  }
-  
-  /* Button */
-  .btn {
-    background: #28a745;
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .btn:hover {
-    background: #218838;
-    transform: scale(1.05);
-  }
-  
-/* SectionTen */
-.testimonials-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.testimonial-card {
-    position: relative;
-    background-color: rgb(243, 224, 247);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(217, 171, 244, 0.1);
-    padding: 30px;
-    text-align: center;
-    width: 300px;
-    /* height: 300px; */
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.testimonial-card h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.testimonial-card p {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.testimonial-card .role {
-    font-weight: bold;
-    color: #555;
-}
-
-.testimonial-card .quote {
-    font-style: italic;
-    color: #555;
-}
-
-.testimonialQuote {
-    position: absolute;
-    width: 30px;
-    height: 10px;
-    bottom: 0;
-    background-color: rgb(243, 224, 247);
-}
 
 /* SectionSix */
 .count-down-bg {
@@ -442,18 +303,15 @@
     position: relative;
     overflow: hidden;
 }
-
 .bonus-item {
     padding: 0px 5px;
 }
-
 .bonus {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
 }
-
 .bonuses:before {
     content: "";
     position: absolute;
@@ -475,65 +333,63 @@
     grid-area: 1 / 1 / 2 / 2;
     display: table;
 }
-
 /* SectionTen */
 .section_learns {
     background-color: #ebf1ff;
     padding-top: 85px;
     padding-bottom: 76px;
 }
-
-/* SectionEleven */
+/* SectionEleven */ 
 .featured_logo-wrapper {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: marquee-horizontal 20s linear infinite;
     /* manipulate the speed of the marquee by changing "20s" line above*/
-}
+  }
 
-.meet-slider {
+  .meet-slider {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: marquee-horizontal-fast 10s linear infinite;
     animation-play-state: running;
     /* manipulate the speed of the marquee by changing "20s" line above*/
-}
+  }
 
-.featured_logo-wrapper::before {
+  .featured_logo-wrapper::before {
     content: "";
     display: inline-block;
     padding-right: 10px;
     /* adjust as needed */
-}
+  }
 
-.meet-slider::before {
+  .meet-slider::before {
     content: "";
     display: inline-block;
     padding-right: 10px;
     /* adjust as needed */
-}
+  }
 
-@keyframes marquee-horizontal {
+  @keyframes marquee-horizontal {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-50%);
+      transform: translateX(-50%);
     }
-}
+  }
 
-@keyframes marquee-horizontal-fast {
+  @keyframes marquee-horizontal-fast {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-}
+  }
 
 @media screen and (max-width: 991px) {
     .video-block.bg-gradiant {
@@ -547,7 +403,7 @@
     }
 
     .section_learn {
-        padding-top: 40px;
+        padding-top: 444px;
         padding-bottom: 50px;
     }
 
@@ -673,7 +529,7 @@
 
     .section_learn {
         background-image: none;
-        padding-top: 50px;
+        padding-top: 258px;
         padding-bottom: 30px;
         display: block;
     }

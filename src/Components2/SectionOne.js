@@ -63,10 +63,10 @@ function SectionOne() {
                                         </div>
                                         <div className="div-block-25">
                                             <h1 className="hero_heading">
-                                                <span className="_35px text-theme">Options </span>
+                                                <span className="_35px text-blue">Options </span>
                                             </h1>
                                             <h1 className="hero_heading bg-text-shape">
-                                                <span className="_35px text-theme">Trading</span>
+                                                <span className="_35px text-blue">Trading</span>
                                             </h1>
                                         </div>
                                         <div className="div-block-25">
@@ -85,10 +85,10 @@ function SectionOne() {
                                             />
                                         </div>
                                         <p className="text-lg mt-20 mt-12">
-                                            Get Nifty & BankNifty Options Calls by&nbsp;
+                                            Get Nifty & BankNifty Options Calls by
                                             <span className="text-span-2">
                                                 SEBI Registered Research Analyst Mr. Amit Jain!
-                                            </span>&nbsp;
+                                            </span>
                                             Stop your losses and create a new income from options trading.
                                         </p>
                                     </div>
@@ -118,7 +118,7 @@ function SectionOne() {
                     </div>
                 </div>
             </div>
-            {/* <div className="video-block bg-gradiant">
+            <div className="video-block bg-gradiant">
                 <div className="video-heading">
                     <p className="section-heading-pr-2 text-whte">
                         Watch This 100-Second Video from a SEBI-Registered Stock Market Expert!
@@ -139,7 +139,7 @@ function SectionOne() {
                         Unlock Your Options Trading Potential NOW!
                     </button>
                 </div>
-            </div> */}
+            </div>
 
             {/* Conditionally render ModalOne and ModalForm */}
             {isModalOneOpen && <ModalOne ref={modalOneRef} openModalForm={openModalForm} closeModal={closeModalOne} />}
